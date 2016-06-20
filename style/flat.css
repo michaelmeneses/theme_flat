@@ -1,0 +1,294 @@
+/**
+ * Theme Flat CSS style file.
+ *
+ * @package    theme_flat
+ * @copyright  2014 Michael Meneses
+ * @license    Free
+ */
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url([[font:theme|SourceSansPro-Regular.otf]]);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url([[font:theme|SourceSansPro-Black.otf]]);
+    font-weight: bold;
+}
+
+body {
+	padding-top: 0px;
+	font-family: 'Source Sans Pro', 'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+input,button,select,textarea{
+	font-family: 'Source Sans Pro', 'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+a, a:visited {
+	color: #239fdb;
+}
+
+.clear {
+	clear: both;
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+
+
+
+#header {
+	background: [[setting:headerbackgroundcolor]];
+}
+#header #toolbar {
+	background: [[setting:headerbarcolor]];
+	min-height: 42px;
+	border-bottom: 2px solid [[setting:headertextcolor]];
+}
+#header #toolbar .language-menu {
+	float: right !important;
+}
+#header #toolbar ul {
+	margin: 0;
+	padding: 0;
+}
+#header #toolbar li {
+	list-style: none;
+	float: left;
+	border-left: 1px solid rgba(256,256,256, 0.10);
+}
+#header #toolbar li:last-child {
+	border-right: 1px solid rgba(256,256,256, 0.10);
+}
+#header #toolbar li a {
+	padding: 11px 20px;
+	color: [[setting:headertextcolor]];
+	display: block;
+	text-decoration: none;
+	font-size: 15px;
+}
+#header #toolbar li a:hover {
+	background: [[setting:headertextcolor]];
+	color: [[setting:headerbarcolor]];
+}
+#header #brandbar {
+	margin: 25px 0px;
+}
+#header #brandbar #left {
+	margin-top: 10px;
+}
+#header #brandbar #left #site-title {
+	font-size: 36px;
+	text-decoration: none;
+	font-weight: 600;
+	margin: 0px;
+}
+#header #brandbar #left #site-title a {
+	text-decoration: none;
+	color: [[setting:headertextcolor]];
+	text-shadow: 3px 3px 3px rgba(0,0,0,0.2);
+}
+#header #brandbar #left #site-description {
+	font-size: 16px;
+	font-weight: 300;
+	color: [[setting:headertextcolor]];
+	margin: 0px;
+}
+#header #brandbar #right .site-links {
+	float: right;
+	border: 2px solid [[setting:headertextcolor]];
+	padding: 14px 15px;
+	margin: 5px 0px 0px 20px;
+	color: [[setting:headertextcolor]];
+	font-size: 16px;
+	margin-right: 5px;
+}
+#header #brandbar #right .site-links div {
+	line-height: 60px;
+}
+#header #brandbar #right .site-links a {
+	color: [[setting:headertextcolor]];
+	font-weight: bold;
+}
+
+
+
+#site-navigation, #site-navigation .navbar-inner {background: [[setting:navbackgroundcolor]] !important;}
+#site-navigation {
+	position: relative;
+	border: 0px;
+	border-radius: 0px;
+	margin: 0px;
+	z-index: 999;
+}
+#site-navigation .navbar-inner {
+	border: 0px;
+	border-radius: 0px;
+}
+#site-navigation .nav>li>a {
+	color: [[setting:navlinkcolor]];
+	display: block;
+	font-size: 15px;
+	text-transform: uppercase;
+	line-height: 1;
+	padding: 23px 19px;
+	text-decoration: none;
+	font-weight: 500;
+}
+#site-navigation .nav>li>.dropdown-menu:before,
+#site-navigation .nav>li>.dropdown-menu:after {display: none;}
+#site-navigation .nav li.dropdown>a:hover .caret,
+#site-navigation .nav li.dropdown.open>.dropdown-toggle .caret {border-top-color: [[setting:navbackgroundcolor]];border-bottom-color: [[setting:navbackgroundcolor]];}
+#site-navigation .dropdown-menu {
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+	margin: 0px;
+	padding: 0px;
+	border-color: #ccc;
+}
+#site-navigation .dropdown-menu>li {border-bottom: 1px solid #ccc;}
+#site-navigation .dropdown-menu>li:last-child {border-bottom: 0px;}
+#site-navigation .dropdown-menu>li>a {line-height: 40px;}
+#site-navigation .nav>li>a:hover,
+#site-navigation .dropdown-menu>li>a:hover {color: [[setting:navbackgroundcolor]];background: [[setting:navhovercolor]];}
+
+
+
+
+#myCarousel a {
+	color: #FFF;
+}
+#myCarousel .carousel-inner>.item>img,
+.carousel-inner>.item>a>img {
+	width: 100%;
+	margin: auto;
+}
+
+
+
+
+.breadcrumb-container {
+	background: [[setting:breadbackgroundcolor]];
+}
+.breadcrumb-container .breadcrumb-nav {
+	margin-bottom: 0px;
+	padding: 10px 0px;
+}
+.breadcrumb-container .breadcrumb {
+	background-color: transparent;
+}
+.breadcrumb-container .breadcrumb>li {
+	text-shadow: none;
+}
+.breadcrumb>li>.divider,
+.breadcrumb-container .breadcrumb>li a,
+.breadcrumb-container .breadcrumb>li span {
+	color: [[setting:breadtextcolor]];
+}
+.breadcrumb-container .breadcrumb-button {
+	margin: 0px;
+	padding: 10px 0px;
+}
+.breadcrumb-container .breadcrumb-button .singlebutton input,
+.breadcrumb-container .breadcrumb-button .singlebutton div {
+	margin: 0px;
+}
+
+
+
+
+#page {
+	margin-top: 20px;
+}
+#page .coursebox {border: 1px solid #e3e3e3;}
+#page .block {background: #fff;}
+#page h1, #page h2, #page h3,
+#page h4, #page h5, #page h6 {
+	color: [[setting:pageheadingcolor]];
+}
+#page a {
+	color: [[setting:pagelinkcolor]];
+}
+#page a:hover {
+	color: [[setting:pagehovercolor]];
+}
+
+
+
+
+#footer {
+	background: [[setting:footerbackgroundcolor]];
+	margin-top: 50px;
+	margin-bottom: -20px;
+}
+#footer a,
+#footer #page-footer,
+#footer #page-footer h3,
+#footer #footerbar .copyright {
+	color: [[setting:footertextcolor]];
+}
+#footer #debug {
+	padding: 40px 0px;
+	background: #efefef;
+}
+#footer #debug a {
+	color: [[setting:pagehovercolor]];
+}
+#footer #page-footer {
+	border: 0px;
+	padding: 40px 0px 40px 0px;
+	text-align: left;
+}
+#footer #page-footer .span4 {
+	padding: 0px 20px;
+}
+#footer #page-footer #footer-flat div:first-child {
+	margin-left: 0px;
+}
+#footer #page-footer h3 {
+	text-shadow: 3px 3px 3px rgba(0,0,0,0.2);
+}
+#footer #page-footer #footer-flat .social,
+#footer #page-footer #footer-flat .contactinfo {
+	list-style: none;
+	margin: 0px;
+}
+#footer #page-footer #footer-flat .social li {
+	display: inline-block;
+}
+#footer #page-footer #footer-flat .social li i {
+	padding: 11px 20px;
+}
+#footer #page-footer #footer-flat .social li a:hover i {
+	background: [[setting:footertextcolor]];
+	color: [[setting:footerbackgroundcolor]];
+	text-decoration: none;
+}
+#footer #page-footer #footer-flat .contactinfo li i {
+	text-shadow: 3px 3px 3px rgba(0,0,0,0.2);
+	padding: 8px;
+}
+#footer #footerbar {
+	background: [[setting:footerbarcolor]];
+	border-top: 2px solid [[setting:footertextcolor]];
+	min-height: 42px;
+}
+#footer #footerbar .copyright p {
+	text-align: center;
+	padding: 20px 0px;
+	margin: 0px;
+}
+#footer #footerbar .copyright a {
+	font-weight: bold;
+}
+
+
+/* CUSTOM CSS */
+[[setting:customcss]]
